@@ -9,6 +9,7 @@ Just simple docker image running NginX responding to:
 /                  # 404 Not Found
 /health-check      # 200 OK
 /health-check.html # 200 OK
+/health_check      # 200 OK
 /healthcheck       # 200 OK
 /healthcheck.html  # 200 OK
 ```
