@@ -1,0 +1,6 @@
+steps:
+  - label: ":docker: build + push + rmi :nginx:"
+    command:
+      - docker build -t ${BUILDKITE_ORGANIZATION_SLUG}/rancher-nginx-health-check:latest ./
+      - docker push ${BUILDKITE_ORGANIZATION_SLUG}/rancher-nginx-health-check:latest
+      - docker rmi ${BUILDKITE_ORGANIZATION_SLUG}/rancher-nginx-health-check:latest
